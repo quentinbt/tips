@@ -31,12 +31,12 @@ create a new repository on the command line
 ## Js
 
 Get unique:
-+via filter
++ via filter
 function onlyUnique(value, index, self) { 
     return self.indexOf(value) === index;
 }
 
-+via prototype
++ via prototype
 Array.prototype.getUnique = function() {
     return [...new Set( [this] )];
 };
