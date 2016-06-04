@@ -28,6 +28,22 @@ create a new repository on the command line
   
   git push -u origin master
 
+## Js
+
+Get unique:
++via filter
+function onlyUnique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
+
++via prototype
+Array.prototype.getUnique = function() {
+    return [...new Set( [this] )];
+};
+
+// usage example:
+var a = ['a', 1, 'a', 2, '1'];
+var unique = a.filter( onlyUnique ); // returns ['a', 1, 2, '1']
 
 ##Other
 ### how to make your Markdown
