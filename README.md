@@ -16,3 +16,7 @@ unmap J
 unmap K
 map J scrollDown count=5
 map K scrollUp count=5
+
+
+### Terminal
+https://github.com/jldeen/bad-ass-terminal
